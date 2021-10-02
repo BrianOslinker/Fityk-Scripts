@@ -1,0 +1,1 @@
+define Si2pPeak(area,center,fwhm=~0.2,wL=~0.055,eLS=~0.59) = VoigtSchenk(area,center,fwhm,wL) + VoigtSchenk(area*2,center+eLS,fwhm,wL)
