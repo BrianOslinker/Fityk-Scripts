@@ -1,0 +1,1 @@
+define Mo3d5and6Peaks(area5,area6,center,fwhm5=~0.5,fwhm6=~0.5,wL=~0.2,eLS=~3.17) = VoigtSchenk(area6,center,fwhm6,wL) + VoigtSchenk(area6*2/3,center-eLS,fwhm6,wL) + VoigtSchenk(area5,center-1.16,fwhm5,wL) + VoigtSchenk(area5*2/3,center-eLS-1.16,fwhm5,wL)
